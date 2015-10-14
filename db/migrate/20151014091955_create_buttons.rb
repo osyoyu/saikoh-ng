@@ -4,6 +4,7 @@ class CreateButtons < ActiveRecord::Migration
       t.string :name, null: false
       t.binary :image
       t.binary :sound
+      t.belongs_to :event, null: false, index: true
 
       t.timestamps null: false
     end

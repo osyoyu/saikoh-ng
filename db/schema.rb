@@ -17,9 +17,12 @@ ActiveRecord::Schema.define(version: 20151014091955) do
     t.string   "name",       null: false
     t.binary   "image"
     t.binary   "sound"
+    t.integer  "event_id",   null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
+
+  add_index "buttons", ["event_id"], name: "index_buttons_on_event_id"
 
   create_table "events", force: :cascade do |t|
     t.string   "name",       null: false
