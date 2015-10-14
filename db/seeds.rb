@@ -5,3 +5,12 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+buttons = Button.create([
+                            {name: '最高'},
+                            {name: 'エモい'},
+                            {name: 'IMAGINE THE FUTURE.'},
+                            {name: 'We Are the Champions'}
+                        ])
+
+Event.create({name: 'saikoh.tk', })
