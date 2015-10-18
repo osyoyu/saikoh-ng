@@ -1,7 +1,6 @@
 class Button < ActiveRecord::Base
-  belongs_to :event
+  include Redis::Objects
 
-  def count
-    100
-  end
+  counter :count
+  belongs_to :event
 end
