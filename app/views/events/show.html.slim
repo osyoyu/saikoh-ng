@@ -1,0 +1,9 @@
+p#notice = notice
+
+table
+  - @buttons.each do |button|
+    tr
+      td = button.name
+      td
+        span.button_count = button.count
+        = button.name
