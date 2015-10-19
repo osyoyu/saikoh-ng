@@ -2,6 +2,8 @@ language: ruby
 
 rvm:
   2.2.3
+services:
+  - redis-server
 
 before_script:
   - bundle exec rake db:create db:migrate db:seed
