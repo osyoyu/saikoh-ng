@@ -9,7 +9,11 @@
 event = Event.new({name: 'saikoh.tk'})
 
 buttons = Button.create([
-                            {name: '最高', event: event},
+                            {
+                                name: '最高',
+                                event: event,
+                                image: File.read(File.expand_path('seeds/saikoh.png', __FILE__))
+                            },
                             {name: 'エモい', event: event},
                             {name: 'IMAGINE THE FUTURE.', event: event},
                             {name: 'We Are the Champions', event: event}
