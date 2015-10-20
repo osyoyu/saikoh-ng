@@ -4,7 +4,7 @@ FactoryGirl.define do
       buttons_count 3
     end
 
-    name "saikoh.tk"
+    name "TestEvent"
 
 
     after(:build) do |event, evaluator|
