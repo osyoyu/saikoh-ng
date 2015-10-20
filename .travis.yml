@@ -6,7 +6,7 @@ services:
   - redis-server
 
 before_script:
-  - bundle exec rake db:create db:migrate db:seed
+  - bundle exec rake db:create db:migrate
 
 script:
   - bundle exec rspec
